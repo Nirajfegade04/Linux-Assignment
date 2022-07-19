@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "Enter Number"
+
+read num
+
+num1=$num
+
+fact=1
+
+
+while [ $num -gt 1 ]
+
+	do
+	fact=$(( fact * num ))
+	num=$(( num - 1 ))
+	done
+
+	echo "Factorial of $num1 is"
+	echo $fact
